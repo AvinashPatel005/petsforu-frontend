@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@theme{
+    --color-highlight: #8cc943;
+    --color-highlight2: #8cc943;
+    --color-primary-bg : #f9f5f3;
+    --color-secondary-bg : #e4e9db;
+    --color-primary : #29892e;
+    --color-on-primary : #040004;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+   
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(153, 153, 153);
+    cursor: pointer;
+    border-radius: 4px;
+    border-radius: 0;
+}
+
+.carousel{
+    scroll-behavior: smooth;
+}
+
+.product-card .add-to-cart{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .15s ease-in;
+    
+}
+.product-card:hover .add-to-cart{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mask-gradient {
+    -webkit-mask-image:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 1%, rgba(0,0,0,1) 99%, rgba(0,0,0,0));
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 1%, rgba(0,0,0,1) 99%, rgba(0,0,0,0));
+}
+
+.marker{
+    box-shadow: 1px 1px 12px black;
+}
